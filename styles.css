@@ -2,29 +2,26 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    /* padding: 0; */
 }
 
 body {
     display: flex;
-    /* padding: 20px; */
     margin: 0 auto;
     position: relative;
 }
 
-
-/* Navbar Styles */
 #navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
-    height: 100vw;
-    padding: 20px;
-    background-color: white;
-    overflow-y: auto;
+    width: 250px; /* Adjust the width as necessary */
+    height: 100vh; /* taking full height */
 
-    /* border-right: 1px solid #ccc; */
+    padding: 20px;
+
+    background-color: white;
+
+    overflow-y: auto; /* Enable scrolling if navbar content is too tall */
 }
 
 #navbar .nav-header {
@@ -36,10 +33,6 @@ body {
 .no-bullets {
     list-style-type: none;
     padding: 0;
-}
-
-.no-bullets li {
-    margin-bottom: 0px;
 }
 
 .nav-link {
@@ -60,8 +53,6 @@ nav ul:last-child {
 .nav-link:hover {
     background-color: rgb(214, 230, 230);
 }
-
-
 
 /* Main Content Styles */
 #main-doc {
@@ -96,6 +87,7 @@ header {
 
 /* Responsive design for smaller screens */
 @media (max-width: 600px) {
+    /* applies only when viewport width is 600px or less  */
     #navbar {
         position: relative;
         width: 100%;
