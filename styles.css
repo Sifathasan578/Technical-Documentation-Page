@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    /* padding: 0; */
+}
+
+body {
+    display: flex;
+    /* padding: 20px; */
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vw;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+
+    /* border-right: 1px solid #ccc; */
+}
+
+#navbar .nav-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
+
+.no-bullets li {
+    margin-bottom: 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    display: block;
+    padding: 8px;
+    font-size: large;
+}
+
+nav ul:last-child {
+    border-bottom: 1px solid;
+}
+
+.nav-link:hover {
+    background-color: rgb(214, 230, 230);
+}
+
+
+
+/* Main Content Styles */
+#main-doc {
+    margin-left: 270px; /* Adjust based on navbar width + margin */
+    padding: 20px;
+}
+
+.main-section {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.main-section li {
+    margin-bottom: 15px;
+}
+
+p {
+    padding: 12px;
+}
+
+code {
+    background-color: rgb(236, 230, 230);
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+
+    .nav-link {
+        padding: 10px;
+    }
+}
